@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <link th:href= "@{/safepass.css}" rel="stylesheet" />
+    <title>SafePass: Password Manager</title>
+</head>
+<body>
+<div align="center">
+    <h1>Password List</h1>
+    <h4 class='button'><a href="/new">Add New Password</a></h4>
+    <br/><br/>
+    <table border="1" cellpadding="10" table id='accounts'>
+        <thead>
+            <tr>
+                <th>Platform</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="passwd: ${listPasswds}">
+                <td th:text="${passwd.platform}">Platform</td>
+                <td th:text="${passwd.passwordUsername}">Username</td>
+                <td th:text="${passwd.passwordVal}">Password</td>
+                <td>
+                    <a th:href="@{'/edit/' + ${passwd.passwordID}}">Edit</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a th:href="@{'/delete/' + ${passwd.passwordID}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        <h4 class='button'><a th:href="@{/logout}">Logout</a></h4>
+
+</div>   
+</body>
+</html>

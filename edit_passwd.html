@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="safepass.css" />
+	<title>Edit Password</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Edit Password</h1>
+        <br />
+        <form action="#" th:action="@{/save}" th:object="${passwd}"
+            method="post">
+ 
+            <table border="0" cellpadding="10">
+                <tr>             
+                    <td>Product ID:</td>
+                    <td>
+                        <input type="text" th:field="*{passwordID}" readonly="readonly" />
+                    </td>
+                </tr>        
+                <tr>             
+                    <td>Platform:</td>
+                    <td>
+                        <input type="text" th:field="*{platform}" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" th:field="*{passwordUsername}" /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text" th:field="*{passwordVal}" /></td>
+                </tr>                           
+                <tr>
+                    <td colspan="2"><button type="submit">Save</button> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch RegistrationLoginApplication",
+            "request": "launch",
+            "mainClass": "com.safepass.registration_login.RegistrationLoginApplication",
+            "projectName": "registration_login"
+        },
+        {
+            "type": "java",
+            "name": "Launch RegisterLoginApplication",
+            "request": "launch",
+            "mainClass": "com.safepass.registerlogin.RegisterLoginApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Launch PracticeApplication",
+            "request": "launch",
+            "mainClass": "com.example.practice.PracticeApplication",
+            "projectName": "practice"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "Frontend.main",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<demo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.demo.DemoApplication",
+            "projectName": "demo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SecuringWebApplication<securing-web-complete>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.securingweb.SecuringWebApplication",
+            "projectName": "securing-web-complete",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PasswordManagerApplication<password_manager>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.safepass.password_manager.PasswordManagerApplication",
+            "projectName": "password_manager",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

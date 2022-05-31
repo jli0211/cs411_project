@@ -1,0 +1,104 @@
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  padding-top: 15%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: #397CE2;
+}
+
+h3{
+  padding-top: 15%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: #397CE2;
+}
+
+.button{
+  transition-duration: .2s;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-right: 40%;
+  margin-left: 40%;
+  text-align: center;
+  font-weight: normal;
+  border: outset;
+  background-color: white; 
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: white;
+  border: inset;
+  color: grey;
+}
+
+#newPass{
+  transition-duration: .2s;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-bottom: 10%;
+  text-align: center;
+  font-weight: normal;
+  border: outset;
+  background-color: white; 
+  border-radius: 10px;
+  text-decoration: none;
+  color:black;
+}
+
+#newPass:hover {
+  background: white;
+  border: inset;
+  color: grey;
+}
+
+table, th {
+  border: 1px solid;
+  font-family: 'Open Sans', sans-serif;
+}
+
+table{ 
+  width: 80%; 
+  margin-left:auto; 
+  margin-right:auto;
+  margin-top: 5%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+#accounts th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #397CE2;
+  color: white;
+}
+  
+td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align:center;
+  }
+
+.new{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align:right;
+  }
+
+#accounts tr:nth-child(even){background-color: #f2f2f2;}
+
+#accounts tr:hover {background-color: #ddd;}
+
+.m-3 {
+  text-align:center;
+}
+/**
+index.html: Add ‘button’ class to h3 
+**/
